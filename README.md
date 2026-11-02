@@ -1,59 +1,153 @@
-# AngularCounterApp
+# Angular Counter App
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+A simple and responsive Counter Application built using modern Angular practices, TypeScript, and Angular Signals.
 
-## Development server
+This project demonstrates Angular fundamentals including standalone components, property binding, event binding, reactive state management, and component-based architecture.
 
-To start a local development server, run:
+## Features
+
+- Increment counter
+- Decrement counter
+- Reset counter
+- Prevent negative counter values
+- Disable decrement button when counter reaches zero
+- Reactive UI using Angular Signals
+- Standalone component architecture
+- OnPush change detection
+- Responsive user interface
+
+## Tech Stack
+
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Angular Signals
+- Jasmine / Karma (unit testing, depending on project configuration)
+
+## Project Structure
+
+```text
+angular-counter-app/
+│
+├── public/
+│
+├── src/
+│   └── app/
+│       ├── features/
+│       │   └── counter/
+│       │       ├── counter.ts
+│       │       ├── counter.html
+│       │       ├── counter.css
+│       │       └── counter.spec.ts
+│       │
+│       ├── app.ts
+│       ├── app.html
+│       └── app.css
+│
+├── .gitignore
+├── angular.json
+├── package.json
+├── package-lock.json
+├── README.md
+└── tsconfig.json
+```
+
+## Prerequisites
+
+Make sure the following tools are installed:
+
+- Node.js (LTS)
+- npm
+- Angular CLI
+
+Verify installation:
+
+```bash
+node -v
+npm -v
+ng version
+```
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/angular-counter-app.git
+```
+
+Navigate to the project:
+
+```bash
+cd angular-counter-app
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+## Run Application
+
+Start the Angular development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open the application:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Build
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+Generate a production build:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Unit Testing
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Execute unit tests:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+## Angular Concepts Covered
 
-For end-to-end (e2e) testing, run:
+| Concept                | Implementation                         |
+| ---------------------- | -------------------------------------- |
+| Components             | Standalone Counter component           |
+| Interpolation          | Display counter value                  |
+| Property Binding       | Disable button based on counter value  |
+| Event Binding          | Increment, decrement and reset actions |
+| Signals                | Reactive state management              |
+| Change Detection       | OnPush strategy                        |
+| Component Architecture | Feature-based folder structure         |
+| Unit Testing           | Component behavior validation          |
 
-```bash
-ng e2e
-```
+## Learning Objectives
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+The primary objective of this project is to understand Angular fundamentals and establish a foundation for developing scalable Angular applications.
 
-## Additional Resources
+## Future Enhancements
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Custom increment/decrement step values
+- Configurable minimum and maximum limits
+- Persist counter value using localStorage
+- Add dark mode
+- Add counter history
+
+## Author
+
+Your Name
+
+## License
+
+This project is intended for learning and educational purposes.

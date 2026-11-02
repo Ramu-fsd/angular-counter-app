@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
+import { Counter } from './features/counter/counter';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  standalone: true,
+  imports: [Counter],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected title = 'angular-counter-app';
-}
+export class App {}
